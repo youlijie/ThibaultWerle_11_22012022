@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 63px;
+    position: relative;
+
+    img {
+        border-radius: 25px;
+        background: black;
+    }
+
+    h1 {
+        position: absolute;
+        top: 25%;
+        font-weight: 500;
+        font-size: 48px;
+        color: white;
+    }
+}
