@@ -1,0 +1,35 @@
+.logement {
+    
+    
+    .logementlink {
+        display: flex;
+        position: relative;
+        margin: 25px 100px;
+    }
+
+    img {
+        object-fit: cover;
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+    }
+
+    p {
+        position: absolute;
+        bottom: 1px;
+        margin-left: 20px;
+        color: white;
+    }
+}
+
+.wraperlogement {
+    background-color: #F7F7F7;
+    width: 90%;
+    margin: auto;
+    margin-top: 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

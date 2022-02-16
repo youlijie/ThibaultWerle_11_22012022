@@ -1,25 +1,28 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
-class Logement extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            datas : {},
-        }
-    }
+const Logement = () => {
+    const [datas, setDatas] = useState([]);
 
-    async componentDidMount() {
+    useEffect(() => {
         const data = require('../data/datas');
-        this.setState({ datas: data });
-        console.log(data);
-    }
-    render() {
-        return (
-            <div>
-                
+        setDatas(data);
+    }, []);
+
+    return (
+        <div className='wraperlogement'>
+                { datas.map((Logement) => ( 
+                <NavLink to={'fiche-logement/' + Logement.id } id={Logement.id} key={Logement.id} exact className={"logement"}  >
+                    
+                        <div className="logementlink" key={Logement.id}>
+                        <img src={Logement.cover}  alt="logo" />
+                        <p> {Logement.title}</p>
+                        </div>
+                     
+                </NavLink>
+                ))}
             </div>
-        );
-    }
-}
+    );
+};
 
 export default Logement;
