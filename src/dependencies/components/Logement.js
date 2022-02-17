@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Logement = () => {
-    const [datas, setDatas] = useState([]);
+const Logement = ({datas, setDatas}) => {
 
     useEffect(() => {
-        const data = require('../data/datas');
+        let data
+        if (!datas[0]) {data = require('../data/datas')
         setDatas(data);
-    }, []);
+    };
+
+    }, [setDatas]);
 
     return (
         <div className='wraperlogement'>
