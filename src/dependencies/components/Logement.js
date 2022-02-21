@@ -9,7 +9,7 @@ const Logement = ({datas, setDatas}) => {
         setDatas(data);
     };
 
-    }, [setDatas]);
+    }, [datas, setDatas]);
 
     return (
         <div className='wraperlogement'>
@@ -17,8 +17,8 @@ const Logement = ({datas, setDatas}) => {
                 <NavLink to={'fiche-logement/' + Logement.id } id={Logement.id} key={Logement.id} exact className={"logement"}  >
                     
                         <div className="logementlink" key={Logement.id}>
-                        <img src={Logement.cover}  alt="logo" />
-                        <p> {Logement.title}</p>
+                            <img src={Logement.cover}  alt="logo" />
+                            <p> {Logement.title}</p>
                         </div>
                      
                 </NavLink>

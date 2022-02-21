@@ -1,0 +1,40 @@
+.headerlogement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+
+    .container {
+        position: relative;
+    }
+
+    .picLogement {
+        width: 1240px;
+        height: 415px;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    
+
+    .arrowLeft {
+        position: absolute;
+        left: 1%;
+        top: 50%;
+        transform: rotate(0deg);
+    }
+
+    .arrowRight {
+        position: absolute;
+        right: 1%;
+        top: 50%;
+        transform: rotate(180deg);
+    }
+
+    .counter {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        color : white;
+    }
+}
