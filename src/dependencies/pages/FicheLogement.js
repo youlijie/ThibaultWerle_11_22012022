@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import DescriptionLog from '../components/DescriptionLog';
 import Footer from '../components/Footer';
 import HeaderLogement from '../components/HeaderLogement';
 import Logo from '../components/Logo';
@@ -14,13 +15,14 @@ const FicheLogement = ({datas, setDatas}) => {
         };
         
         console.log(datas, data , "datas");
-    }, []);
+    }, [datas, setDatas]);
 
     return (
         <div>
             <Logo />
             <Navigation />
             <HeaderLogement datas={datas} setDatas={setDatas} />
+            <DescriptionLog datas={datas} setDatas={setDatas} />
             <Footer />
         </div>
     );
