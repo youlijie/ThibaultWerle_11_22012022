@@ -33,7 +33,9 @@ const DescriptionLog = ({datas, setDatas}) => {
                     <Stars datas={datas} setDatas={setDatas} />
                 </div>    
             </div>
-            <Dropdown title={"Description"} data={logement?.description} datas={datas} setDatas={setDatas} /> 
+            <div className='dropdowndiv'>
+                <Dropdown title={"Description"} data={logement?.description} datas={datas} setDatas={setDatas} /> 
+            </div>    
         </div>
     );
 };

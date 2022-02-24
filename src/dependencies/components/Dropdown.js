@@ -36,23 +36,35 @@ const Dropdown = ({datas, setDatas}) => {
         }
     }
 
+    // rotate arrow of 90° when dropdown is open
+    const arrowStyle = {
+        transform: dropdown ? 'rotate(90deg)' : 'rotate(0deg)'
+    }
+
+    const arrowStyle2 = {
+        transform: dropdown2 ? 'rotate(90deg)' : 'rotate(0deg)'
+    }
+    
+
     return (
-        <div className='description'>
+        <div className='descriptiondropdown'>
             <div className='dropdown'>
-                <div className='dropdown-button' onClick={handleClick}>
+                <div className='button' onClick={handleClick}>
                     <p>Description</p>
-                    <img src={arrow} alt="arrow" />
+                    <img src={arrow} style={arrowStyle} alt="arrow" />
                 </div>
-                {dropdown && <p>{logement?.description}</p>}
+                {dropdown && <p className='text1'>{logement?.description}</p>}
             </div>
             <div className='dropdown'>
-                <div className='dropdown-button' onClick={handleClick2}>
+                <div className='button' onClick={handleClick2}>
                     <p>Equipments</p>
-                    <img src={arrow} alt="arrow" />
+                    <img src={arrow} style={arrowStyle2} alt="arrow" />
                 </div>
+                <div className='equipments'>
                 {dropdown2 && logement?.equipments.map((equipment) => (
                     <p key={equipment}>{equipment}</p>
                 ))}
+                </div>
             </div>
         </div>
     );
