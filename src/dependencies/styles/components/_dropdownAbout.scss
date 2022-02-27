@@ -1,10 +1,19 @@
+.imageAbout {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 25px;
+    margin-top: 50px;
+}
+
 .descriptiondropdown2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
 
     .dropdown{
         width: 80%;
@@ -16,5 +25,11 @@
         .button {
             width: 100%;
         }
+    }
+}
+
+@media (max-width: 900px) {
+    .imageAbout {
+        height: 300px;
     }
 }

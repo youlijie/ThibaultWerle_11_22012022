@@ -5,6 +5,9 @@
     margin-top: 63px;
     position: relative;
 
+    @media (max-width: 785px) {
+    }
+
     img {
         width: 90%;
         height: 223px;
@@ -18,5 +21,9 @@
         font-weight: 500;
         font-size: 48px;
         color: white;
+
+        @media (max-width: 785px) {
+            margin: 0 80px;
+        }
     }
 }

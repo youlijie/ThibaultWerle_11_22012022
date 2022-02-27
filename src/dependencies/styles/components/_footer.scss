@@ -19,3 +19,15 @@
         margin-bottom: 30px;
     }
 }
+
+@media (max-width: 785px) {
+    .footer {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        p {
+            font-weight: 500;
+            font-size: 12px;
+        }
+    }
+}

@@ -70,7 +70,7 @@ const HeaderLogement = ({datas, setDatas}) => {
 
     return (
         <div className='headerlogement'>
-            <div className="headerlogement-pictures">
+            <div className="pictures">
                 <div className="container">
                     <img src={pictures[index]} alt="Logement" className='picLogement'/>
                     {showArrow()}

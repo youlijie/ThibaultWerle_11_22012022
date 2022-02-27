@@ -1,5 +1,24 @@
 .logo {
     position: absolute;
+    display: inline-block;
     left: 100px;
     top: 40px;
+}
+
+@media (max-width: 785px) {
+    .logo {
+        left: 20px;
+        margin-right: 100px;
+        top: 20px;
+        
+        img {
+            width: 200px;
+            height: 60px;
+
+            @media (max-width: 463px) {
+                width: 150px;
+                height: 40px;
+            }
+        }
+    }
 }

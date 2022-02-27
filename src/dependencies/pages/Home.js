@@ -12,8 +12,10 @@ const Home = ({datas, setDatas}) => {
     
     return (
         <div>
-            <Logo />
-            <Navigation />
+            <div className='nav'>
+                <Logo />
+                <Navigation />
+            </div>
             <Header />
             <Logement datas={datas} setDatas={setDatas}/>
             <Footer />

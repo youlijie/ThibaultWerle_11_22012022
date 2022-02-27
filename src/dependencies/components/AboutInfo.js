@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import arrow from '../assets/arrow.png';
+import image from "../assets/a-propos-picture.png"
+import imagePhone from "../assets/Background-smartphone-apropos.png"
 
 
 const AboutInfo = () => {
@@ -67,7 +69,9 @@ const AboutInfo = () => {
     }
 
     return (
-        <div className='descriptiondropdown2'>
+        <div className="about-info">
+        <img src={imagePhone} srcSet={`${imagePhone} 900w, ${image} 1920w`}  alt="" className='imageAbout' />
+            <div className='descriptiondropdown2'>
             <div className='dropdown'>
                 <div className='button' onClick={handleClick}>
                     <p>Fiabilité</p>
@@ -97,6 +101,8 @@ const AboutInfo = () => {
                 {dropdown4 && <p className='text1'>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</p>}
             </div>
         </div>
+        </div>
+        
     );
 }
 

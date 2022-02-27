@@ -19,8 +19,10 @@ const FicheLogement = ({datas, setDatas}) => {
 
     return (
         <div>
-            <Logo />
-            <Navigation />
+            <div className='nav'>
+                <Logo />
+                <Navigation />
+            </div>
             <HeaderLogement datas={datas} setDatas={setDatas} />
             <DescriptionLog datas={datas} setDatas={setDatas} />
             <Footer />

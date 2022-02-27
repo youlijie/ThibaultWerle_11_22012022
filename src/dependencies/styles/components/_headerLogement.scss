@@ -3,13 +3,18 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 25px;
+    width: 100%;
+
+    .pictures {
+        width: 80%;
+    }
 
     .container {
         position: relative;
     }
 
     .picLogement {
-        width: 1240px;
+        width: 100%;
         height: 415px;
         margin: auto;
         object-fit: cover;
@@ -38,5 +43,21 @@
         bottom: 5%;
         left: 50%;
         color : white;
+    }
+}
+
+@media (max-width: 785px) {
+
+    .headerlogement {
+        margin-top: 150px;
+    }
+    .arrowLeft {
+        width: 30px;
+        height: 50px;
+    }
+
+    .arrowRight {
+        width: 30px;
+        height: 50px;
     }
 }

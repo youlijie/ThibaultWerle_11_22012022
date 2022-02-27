@@ -62,3 +62,41 @@
     }
 
 }
+
+@media (max-width: 1280px) {
+    .dropdowndiv {
+        width: 100%;
+    }
+    
+    .descriptiondropdown {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .dropdown {
+        width: 100%;
+
+        .text1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }    
+    
+        .equipments {
+    
+            margin-left: auto;
+                margin-right: auto;
+                width: 70%;
+        }
+    }
+
+    .button {
+        margin-left: auto;
+        margin-right: auto;
+        width: 72%;
+    }
+}

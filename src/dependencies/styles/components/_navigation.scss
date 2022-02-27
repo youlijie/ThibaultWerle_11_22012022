@@ -35,3 +35,35 @@
         }
     }
 }
+
+@media (max-width: 785px) {
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-bottom: 140px;
+    }
+    .navigation {
+        display: block;
+        position: absolute;
+        right: 0%;
+
+        a { 
+            right: 5px;
+            top: 35px;
+
+            @media (max-width: 463px) {
+                top: 25px;
+            }
+            
+            &:first-child {
+                margin-right: 0px;
+            }
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
