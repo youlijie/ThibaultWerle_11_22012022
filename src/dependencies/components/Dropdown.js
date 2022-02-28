@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import arrow from '../assets/arrow.png';
 
 const Dropdown = ({datas, setDatas}) => {
     const { id } = useParams();
     const [logement , setLogement] = useState();
+    const display = useRef(false);
 
     useEffect(() => {
         const data = datas.find(logement => logement.id === id);
@@ -31,8 +32,10 @@ const Dropdown = ({datas, setDatas}) => {
     const handleClick2 = () => {
         if (dropdown2 === false) {
             setDropdown2(true);
+            display.current.style.display = 'block';
         } else {
             setDropdown2(false);
+            display.current.style.display = 'none';
         }
     }
 
@@ -44,6 +47,7 @@ const Dropdown = ({datas, setDatas}) => {
     const arrowStyle2 = {
         transform: dropdown2 ? 'rotate(90deg)' : 'rotate(0deg)'
     }
+    
     
 
     return (
@@ -60,7 +64,7 @@ const Dropdown = ({datas, setDatas}) => {
                     <p>Equipments</p>
                     <img src={arrow} style={arrowStyle2} alt="arrow" />
                 </div>
-                <div className='equipments'>
+                <div className='equipments' ref={display} >
                 {dropdown2 && logement?.equipments.map((equipment) => (
                     <p key={equipment}>{equipment}</p>
                 ))}

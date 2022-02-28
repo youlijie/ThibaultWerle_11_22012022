@@ -5,6 +5,7 @@
     width: 80%;
     border-radius: 25px;
     margin-top: 50px;
+    object-fit: cover;
 }
 
 .descriptiondropdown2 {
@@ -31,5 +32,6 @@
 @media (max-width: 900px) {
     .imageAbout {
         height: 300px;
+        object-fit: cover;
     }
 }
