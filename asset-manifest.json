@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.d4acaa27.css",
-    "main.js": "/static/js/main.0de1cda7.js",
+    "main.js": "/static/js/main.23d6bdec.js",
     "static/media/a-propos-picture.png": "/static/media/a-propos-picture.fce6fc3e9ed27433e9b0.png",
     "static/media/home-picture.png": "/static/media/home-picture.1a548e63f5d9e19b7069.png",
     "static/media/Background-smartphone-apropos.png": "/static/media/Background-smartphone-apropos.40c3d9bcd588a199d69e.png",
     "index.html": "/index.html",
     "main.d4acaa27.css.map": "/static/css/main.d4acaa27.css.map",
-    "main.0de1cda7.js.map": "/static/js/main.0de1cda7.js.map"
+    "main.23d6bdec.js.map": "/static/js/main.23d6bdec.js.map"
   },
   "entrypoints": [
     "static/css/main.d4acaa27.css",
-    "static/js/main.0de1cda7.js"
+    "static/js/main.23d6bdec.js"
   ]
 }
