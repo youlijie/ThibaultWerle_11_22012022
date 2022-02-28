@@ -19,7 +19,7 @@ export const Switch = () => {
 
 const App = () => (
 
-    <BrowserRouter>        
+    <BrowserRouter basename="/React">        
             <Switch />      
     </BrowserRouter>
 );
