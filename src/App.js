@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Home from './dependencies/pages/Home';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Pagenotfound from './dependencies/pages/PageNotFound';
 import About from './dependencies/pages/APropos';
 import Fichelogement from './dependencies/pages/FicheLogement';
@@ -19,9 +19,9 @@ export const Switch = () => {
 
 const App = () => (
 
-    <BrowserRouter basename="/React">        
+    <HashRouter>       
             <Switch />      
-    </BrowserRouter>
+    </HashRouter>
 );
 
 export default App;
